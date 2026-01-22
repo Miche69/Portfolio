@@ -1,9 +1,46 @@
+import {useEffect, useState} from "react";
+import Project from "@/app/components/Project";
+import ProjectNavBar from "@/app/components/ProjectNavBar";
+
 export default function Projects() {
+    const [data, setData] = useState([]);
+
+    const fetchData = async () => {
+        try {
+            let response = await fetch(`./projects.json`);
+            let data = await response.json();
+            setData(data);
+
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    useEffect(() => {
+        fetchData();
+    })
+
     return (
         <div id="projects"
-             className="projects-section bg-primary text-secondary flex items-center justify-center flex-col h-screen">
-            <h2 className="font-druk uppercase text-[100px] mb-10">Projekte</h2>
-            <p className="font-josefin text-2xl">This is the Projects section.</p>
+             className="projects-section bg-primary p-10 text-secondary flex flex-col">
+            <h2 className="font-druk uppercase text-7xl pt-12 pb-12">Projekte</h2>
+            <div className="bg-zinc-200 font-josefin rounded-xl flex flex-col text-black">
+                <div className="flex pr-5 gap-2 p-4">
+                    <div className="bg-red-500 w-3 h-3 rounded-full"></div>
+                    <div className="bg-yellow-500 w-3 h-3 rounded-full"></div>
+                    <div className="bg-green-500 w-3 h-3 rounded-full"></div>
+                </div>
+                <div className="flex flex-col bg-secondary">
+                    <div className="flex bg-zinc-300 gap-0.25 pt-0.5">
+                        {data.projects && data.projects.map((project) => (
+                            <ProjectNavBar key={project.id} project={project}/>
+                        ))}
+                    </div>
+                    {data.projects && data.projects.map((project) => (
+                        <Project key={project.id} project={project}/>
+                    ))}
+                </div>
+            </div>
         </div>
     );
 }

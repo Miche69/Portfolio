@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+@custom-variant visible (&:where(.visible, .visible *));
+
+
 @font-face {
     font-family: "Druk Text Wide Su Trial";
     src: url("./assets/font/Druk-Bold-Trial.otf");

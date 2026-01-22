@@ -1,0 +1,44 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "SBB-Lore",
+            "icon": "./sbb-lore-icon.png",
+            "thumbnail": "./sbb-lore.png",
+            "liveUrl": "https://sbb-lore.vercel.app/",
+            "githubUrl": "https://github.com/IM23a-braendlim/SBB_Lore",
+            "description": "A project focused on developing innovative solutions.",
+            "status": "Fertig"
+        },
+        {
+            "id": 2,
+            "name": "Base-Converter",
+            "icon": "./base-converter-icon.png",
+            "thumbnail": "./base-converter.png",
+            "liveUrl": "https://base-converter-pearl.vercel.app/",
+            "githubUrl": "https://github.com/Miche69/BaseConverter",
+            "description": "A project aimed at improving user experience.",
+            "status": "Im Entwicklung"
+        },
+        {
+            "id": 3,
+            "name": "AntiShorts",
+            "icon": "./antishorts-icon.png",
+            "thumbnail": "./sbb-lore.png",
+            "liveUrl": "https://github.com/Miche69/AntiShorts",
+            "githubUrl": "https://github.com/Miche69/AntiShorts",
+            "description": "A research project exploring new technologies.",
+            "status": "Im Entwicklung"
+        },
+        {
+            "id": 4,
+            "name": "ShoppingApp",
+            "icon": "./vite.svg",
+            "thumbnail": "./shopping-app.png",
+            "liveUrl": "https://shopping-app-three-beige.vercel.app/",
+            "githubUrl": "https://github.com/Miche69/ShoppingApp",
+            "description": "An e-commerce platform for modern shopping.",
+            "status": "Fertig"
+        }
+    ]
+}

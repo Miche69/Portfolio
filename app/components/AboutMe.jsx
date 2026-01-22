@@ -26,7 +26,10 @@ export default function AboutMe() {
                         meine Fähigkeiten in spannenden Projekten einzusetzen und zur Entwicklung innovativer Lösungen
                         beizutragen.
                     </p>
-                    <Link href="https://github.com/Miche69" className="text-left bg-primary text-secondary w-fit before:content-[attr(before)] p-3 rounded-lg hover:bg-indigo-300 hover:text-black duration-200 ease-in-out">
+                    <Link href="https://github.com/Miche69"
+                          className="bg-primary p-4 w-fit flex gap-4 text-secondary rounded-xl"
+                    >
+                        <img src="./logo-github.svg" alt="Github Project" className="invert w-5 h-5"/>
                         GitHub Profile
                     </Link>
                 </div>
