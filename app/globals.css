@@ -1,26 +1,44 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+    font-family: "Druk Text Wide Su Trial";
+    src: url("./assets/font/Druk-Bold-Trial.otf");
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+    font-family: "BebasNeue";
+    src: url("./assets/font/BebasNeue-Regular.ttf");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+    font-family: "Josefin Sans Medium";
+    src: url("./assets/font/JosefinSans-Medium.ttf");
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme{
+    --color-primary: #3115E8;
+    --color-secondary: #FFFCEC;
+    --font-druk: "Druk Text Wide Su Trial";
+    --font-josefin: "Josefin Sans Medium";
+    --font-bebasneue: "BebasNeue";
+}
+
+@layer base {
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    /* Light mode */
+    ::-webkit-scrollbar-track {
+        background: var(--color-primary);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #FFFCEC;
+        border: 1px black solid;
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: lightblue;
+    }
 }
