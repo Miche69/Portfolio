@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link"
 
 export default function AboutMe() {
     return (
@@ -26,7 +26,7 @@ export default function AboutMe() {
                         meine Fähigkeiten in spannenden Projekten einzusetzen und zur Entwicklung innovativer Lösungen
                         beizutragen.
                     </p>
-                    <Link to="https://github.com/Miche69" className="text-left bg-primary text-secondary w-fit before:content-[attr(before)] p-3 rounded-lg hover:bg-indigo-300 hover:text-black duration-200 ease-in-out">
+                    <Link href="https://github.com/Miche69" className="text-left bg-primary text-secondary w-fit before:content-[attr(before)] p-3 rounded-lg hover:bg-indigo-300 hover:text-black duration-200 ease-in-out">
                         GitHub Profile
                     </Link>
                 </div>

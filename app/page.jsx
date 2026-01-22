@@ -10,21 +10,10 @@ import Projects from "@/app/components/Projects";
 export default function Home() {
     return (
         <div className="home-page">
-            <BrowserRouter>
-                <Navbar/>
-                <Routes>
-                    <Route path="/" element={<Intro/>}/>
-                </Routes>
-                <Routes>
-                    <Route path="/" element={<AboutMe/>}/>
-                </Routes>
-                <Routes>
-                    <Route path="/" element={<Skills/>}/>
-                </Routes>
-                <Routes>
-                    <Route path="/" element={<Projects/>}/>
-                </Routes>
-            </BrowserRouter>
+            <Intro />
+            <AboutMe />
+            <Skills />
+            <Projects />
         </div>
     );
 }
