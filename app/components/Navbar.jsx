@@ -38,7 +38,7 @@ export default function Navbar() {
                   }}
             >Michelle Br<span
                 className="uppercase font-bebasneue text-[25.5px]">ä</span>ndli</Link>
-            <div className="flex items-center gap-6 justify-between">
+            <div className="items-center hidden sm:flex gap-6 justify-between">
                 <Link href="/#aboutMe" className="font-josefin text-center uppercase hover:text-indigo-300"
                       onClick={(e) => {
                           handleSmoothScroll(e, "aboutMe");

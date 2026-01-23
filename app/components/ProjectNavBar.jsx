@@ -4,13 +4,14 @@ import {useContext, useEffect, useState} from "react";
 import {event} from "next/dist/build/output/log";
 
 export default function ProjectNavBar(props) {
-
     const tabs = document.getElementsByClassName("project-tab");
     const projects = document.getElementsByClassName("project-content");
+    const mobileTabs = document.getElementsByClassName("project-navbar-mobile");
 
-    function activeTab(tabID, tabName) {
-        const currentTab = document.getElementById(`project${tabID}`);
-        const currentProject = document.getElementById(`${tabName}`);
+    function activeTab(tabID) {
+        const currentTab = document.getElementById(`navBarProject${tabID}`);
+        const currentProject = document.getElementById(`project${tabID}`);
+        const currentMobileTab = document.getElementById(`mobileproject${tabID}`);
 
         if (!currentTab.classList.contains("visible")) {
             for (let i = 0; i < projects.length; i++) {
@@ -19,33 +20,39 @@ export default function ProjectNavBar(props) {
             for (let i = 0; i < tabs.length; i++) {
                 tabs[i].classList.remove("visible");
             }
+            for (let i = 0; i < mobileTabs.length; i++) {
+                mobileTabs[i].classList.remove("visible");
+            }
             currentTab.classList.add("visible");
             currentProject.classList.add("visible");
+            currentMobileTab.classList.add("visible");
         }
     }
 
     return (
-        <nav id={`project${props.project.id}`}
+        <nav id={`navBarProject${props.project.id}`}
              onLoad={() => {
                  const firstTab = tabs[0];
                  const firstProject = projects[0];
+                 const firstMobileTab = mobileTabs[0];
                  if (firstTab && firstProject) {
                      firstTab.classList.add("visible");
                      firstProject.classList.add("visible");
+                     firstMobileTab.classList.add("visible");
                  }
              }
              }
-             className="project-tab items-center flex bg-zinc-500 visible:bg-secondary p-1 rounded-t-lg"
+             className="project-tab items-center flex bg-zinc-500 visible:bg-secondary sm:p-1 p-0.5 rounded-t-lg"
              onClick={(event) => {
                  event.preventDefault()
-                 activeTab(props.project.id, props.project.name);
+                 activeTab(props.project.id);
              }}
         >
             <div
-                className="flex flex-wrap  gap-5 visible:hover:bg-transparent hover:bg-zinc-400 cursor-pointer rounded-2xl p-3 justify-center">
-                <img src={props.project.icon} alt={props.project.name} className="w-5 h-5"/>
-                <p className="">{props.project.name}</p>
-                <img src="./close-outline.svg" className="w-5 h-5" alt="Close Modal"/>
+                className="flex flex-wrap gap-3 visible:hover:bg-transparent hover:bg-zinc-400 cursor-pointer rounded-2xl sm:p-3 p-2 ">
+                <img src={props.project.icon} alt={props.project.name} className="lg:w-5 lg:h-5 w-4 h-4"/>
+                <p className="lg:text-base text-sm">{props.project.name}</p>
+                <img src="./close-outline.svg" className="md:block hidden w-5 h-5" alt="Close Modal"/>
             </div>
         </nav>
     );

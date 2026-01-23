@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Project(props) {
     return (
-        <div id={props.project.name} className="project-content visible:flex hidden p-10  flex-col gap-5">
+        <div id={`project${props.project.id}`} className="project-content visible:flex hidden p-10 sm:pb-10 pb-0  flex-col gap-5">
             <Link href={`${props.project.liveUrl}`}
                   className="bg-white w-full flex  items-center p-4 text-zinc-700 border gap-2 border-zinc-300 rounded-xl">
                 <img src="./lock-closed-outline.svg" alt="Locked Project"

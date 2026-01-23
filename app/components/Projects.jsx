@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import Project from "@/app/components/Project";
 import ProjectNavBar from "@/app/components/ProjectNavBar";
+import ProjectNavBarMobile from "@/app/components/ProjectNavBarMobile";
 
 export default function Projects() {
     const [data, setData] = useState([]);
@@ -31,7 +32,7 @@ export default function Projects() {
                     <div className="bg-green-500 w-3 h-3 rounded-full"></div>
                 </div>
                 <div className="flex flex-col bg-secondary">
-                    <div className="flex bg-zinc-300 gap-0.25 pt-0.5">
+                    <div className="sm:flex hidden bg-zinc-300 gap-0.25 pt-0.5">
                         {data.projects && data.projects.map((project) => (
                             <ProjectNavBar key={project.id} project={project}/>
                         ))}
@@ -39,6 +40,11 @@ export default function Projects() {
                     {data.projects && data.projects.map((project) => (
                         <Project key={project.id} project={project}/>
                     ))}
+                    <div className="sm:hidden flex justify-center items-center p-2 gap-1 text-sm">
+                        {data.projects && data.projects.map((project) => (
+                         <ProjectNavBarMobile key={project.id} project={project}/>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
