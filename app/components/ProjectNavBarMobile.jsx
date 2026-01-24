@@ -15,7 +15,7 @@ export default function ProjectNavBarMobile(props) {
     }
     useEffect(() => {
         fetchData();
-    }, []);
+    });
 
     const totalProjects = data.projects ? data.projects.length : 0;
     const mobileTabs = document.getElementsByClassName("project-navbar-mobile");
@@ -67,7 +67,7 @@ export default function ProjectNavBarMobile(props) {
 
     return (
         <div id={`mobileproject${props.project.id}`}
-             className="project-navbar-mobile visible:flex w-full hidden text-black justify-between p-10 pb-5 items-center z-50">
+             className="project-navbar-mobile visible:flex w-full hidden text-black justify-between p-10 pb-5 items-center">
             <button onClick={() => {
                 lastProject(props.project.id);
             }}   disabled={props.project.id === 1}

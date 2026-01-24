@@ -1,7 +1,20 @@
 @import "tailwindcss";
 
 @custom-variant visible (&:where(.visible, .visible *));
+@custom-variant rhombus (&:where(.rhombus, .rhombus *));
+@custom-variant oppositeRhombus (&:where(.oppositeRhombus, .oppositeRhombus *));
 
+.rhombus {
+    height: 200px; /* adjust to control the size  */
+    aspect-ratio: 6/3;
+    clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+}
+
+.oppositeRhombus {
+    height: 200px; /* adjust to control the size  */
+    aspect-ratio: 6/3;
+    clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+}
 
 @font-face {
     font-family: "Druk Text Wide Su Trial";
@@ -31,21 +44,42 @@
 }
 
 @layer base {
-    ::-webkit-scrollbar {
+    .skills ::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    :root ::-webkit-scrollbar {
         width: 6px;
     }
 
     /* Light mode */
-    ::-webkit-scrollbar-track {
+    :root ::-webkit-scrollbar-track {
         background: var(--color-primary);
     }
 
-    ::-webkit-scrollbar-thumb {
+    :root ::-webkit-scrollbar-thumb {
         background: #FFFCEC;
         border: 1px black solid;
         border-radius: 10px;
     }
-    ::-webkit-scrollbar-thumb:hover {
+
+    :root ::-webkit-scrollbar-thumb:hover {
         background: lightblue;
+    }
+}
+
+@theme {
+    --animate-rightslide: RightSlide 10s infinite linear;
+    @keyframes RightSlide {
+        from {translate: 0;}
+        to {translate: -100%;}
+    }
+
+    --animate-leftslide: LeftSlide 10s infinite linear;
+    @keyframes LeftSlide {
+        from {translate: -100%;}
+        to {translate: 0;}
     }
 }

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import {useEffect, useState} from "react";
+import HamburgerMenu from "@/app/components/HamburgerMenu";
 
 
 export default function Navbar() {
@@ -38,6 +39,7 @@ export default function Navbar() {
                   }}
             >Michelle Br<span
                 className="uppercase font-bebasneue text-[25.5px]">ä</span>ndli</Link>
+            <HamburgerMenu />
             <div className="items-center hidden sm:flex gap-6 justify-between">
                 <Link href="/#aboutMe" className="font-josefin text-center uppercase hover:text-indigo-300"
                       onClick={(e) => {

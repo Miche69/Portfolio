@@ -1,8 +1,3 @@
-"use client";
-import Link from "next/link";
-import {useContext, useEffect, useState} from "react";
-import {event} from "next/dist/build/output/log";
-
 export default function ProjectNavBar(props) {
     const tabs = document.getElementsByClassName("project-tab");
     const projects = document.getElementsByClassName("project-content");

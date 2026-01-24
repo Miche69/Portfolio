@@ -23,8 +23,8 @@ export default function Projects() {
 
     return (
         <div id="projects"
-             className="projects-section bg-primary p-10 text-secondary flex flex-col">
-            <h2 className="font-druk uppercase text-7xl pt-12 pb-12">Projekte</h2>
+             className="projects-section bg-primary sm:p-10 sm:pb-15 pb-15 p-5 text-secondary flex flex-col">
+            <h2 className="font-druk uppercase text-7xl sm:pb-12 sm:pt-12 pb-20 pt-20">Projekte</h2>
             <div className="bg-zinc-200 font-josefin rounded-xl flex flex-col text-black">
                 <div className="flex pr-5 gap-2 p-4">
                     <div className="bg-red-500 w-3 h-3 rounded-full"></div>
@@ -38,7 +38,7 @@ export default function Projects() {
                         ))}
                     </div>
                     {data.projects && data.projects.map((project) => (
-                        <Project key={project.id} project={project}/>
+                        <Project key={`${project.id}-${project.name}`} project={project}/>
                     ))}
                     <div className="sm:hidden flex justify-center items-center p-2 gap-1 text-sm">
                         {data.projects && data.projects.map((project) => (

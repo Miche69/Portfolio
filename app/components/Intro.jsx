@@ -14,7 +14,7 @@ export default function Intro() {
              className="intro-section bg-primary text-secondary flex items-center justify-center flex-col h-screen">
             <div className="flex items-center justify-center flex-1 flex-col">
                 <div>
-                    <h1 className="font-druk text-center uppercase text-[150px]">Michelle Br<span className="uppercase text-center font-bebasneue text-[159px]">ä</span>ndli</h1>
+                    <h1 className="font-druk text-center uppercase text-9xl lg:text-[150px]">Michelle Br<span className="uppercase text-center font-bebasneue text-[135px] lg:text-[159px]">ä</span>ndli</h1>
                 </div>
                 <p className="font-josefin text-3xl">Informatikerin</p>
             </div>

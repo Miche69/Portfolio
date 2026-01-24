@@ -1,0 +1,65 @@
+{
+    "skills": [
+        {
+            "id": 1,
+            "name": "JavaScript",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+        },
+        {
+            "id": 2,
+            "name": "Python",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+        },
+        {
+            "id": 3,
+            "name": "React",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+        },
+        {
+            "id": 4,
+            "name": "Node.js",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+        },
+        {
+            "id": 5,
+            "name": "CSS",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+        },
+        {
+            "id": 6,
+            "name": "HTML",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+        },
+        {
+            "id": 7,
+            "name": "MySQL",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+        },
+        {
+            "id": 8,
+            "name": "NoSQL",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+        }
+    ],
+    "languages": [
+        {
+            "id": 1,
+            "name": "Deutsch",
+            "proficiency": "Muttersprache",
+            "icon": "german.png"
+        },
+        {
+            "id": 2,
+            "name": "Englisch",
+            "proficiency": "B2+",
+            "icon": "english.svg"
+        },
+        {
+            "id": 3,
+            "name": "Französisch",
+            "proficiency": "B1",
+            "icon": "french.svg"
+        }
+    ]
+
+}
