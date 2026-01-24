@@ -30,24 +30,24 @@ export default function Skills() {
             <h2 className="text-7xl uppercase font-druk sm:pt-12 sm:pb-12 sm:p-10 p-5 pb-20 pt-20">Kompetenzen</h2>
             <div className="skills flex overflow-hidden gap-7 flex-col">
                 <div className="skills flex justify-start overflow-hidden items-center ">
-                    <div className="flex flex-nowrap animate-rightslide">
+                    <div className="flex flex-nowrap gap-4 pr-4 animate-rightslide">
                         {rightSkills && rightSkills.map((skill) => (
                             <RightSkill key={`${skill.id}-${skill.name}`} skill={skill}/>
                         ))}
                     </div>
-                    <div aria-hidden className="flex flex-nowrap animate-rightslide">
+                    <div aria-hidden className="flex flex-nowrap gap-4 pr-4 animate-rightslide">
                         {rightSkills && rightSkills.map((skill) => (
                             <RightSkill key={`${skill.id}-${skill.name}`} skill={skill}/>
                         ))}
                     </div>
                 </div>
                 <div className="skills flex justify-start overflow-hidden items-center ">
-                    <div className="flex flex-nowrap animate-leftslide">
+                    <div className="flex flex-nowrap gap-4 pr-4 animate-leftslide">
                         {leftSkills && leftSkills.map((skill) => (
                             <LeftSkill key={`${skill.id}-${skill.name}`} skill={skill}/>
                         ))}
                     </div>
-                    <div aria-hidden className="flex flex-nowrap animate-leftslide">
+                    <div aria-hidden className="flex flex-nowrap pr-4 gap-4 animate-leftslide">
                         {leftSkills && leftSkills.map((skill) => (
                             <LeftSkill key={`${skill.id}-${skill.name}`} skill={skill}/>
                         ))}

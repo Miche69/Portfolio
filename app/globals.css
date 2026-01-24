@@ -71,13 +71,13 @@
 }
 
 @theme {
-    --animate-rightslide: RightSlide 10s infinite linear;
+    --animate-rightslide: RightSlide 20s infinite linear;
     @keyframes RightSlide {
         from {translate: 0;}
         to {translate: -100%;}
     }
 
-    --animate-leftslide: LeftSlide 10s infinite linear;
+    --animate-leftslide: LeftSlide 20s infinite linear;
     @keyframes LeftSlide {
         from {translate: -100%;}
         to {translate: 0;}
