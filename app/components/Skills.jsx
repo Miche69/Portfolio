@@ -26,8 +26,8 @@ export default function Skills() {
 
     return (
         <div id="skills"
-             className="skills-section bg-secondary text-primary flex pt-10 pb-10 justify-center flex-col">
-            <h2 className="text-7xl uppercase font-druk sm:pt-12 sm:pb-12 sm:p-10 p-5  pb-20 pt-20">Kompetenzen</h2>
+             className="skills-section bg-secondary text-primary flex sm:pt-10 sm:pb-10 pb-5 pt-5 justify-center flex-col">
+            <h2 className="text-7xl uppercase font-druk sm:pt-12 sm:pb-12 sm:p-10 p-5 pb-20 pt-20">Kompetenzen</h2>
             <div className="skills flex overflow-hidden gap-7 flex-col">
                 <div className="skills flex justify-start overflow-hidden items-center ">
                     <div className="flex flex-nowrap animate-rightslide">
