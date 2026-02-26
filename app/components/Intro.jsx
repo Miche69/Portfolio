@@ -16,7 +16,7 @@ export default function Intro() {
                 <div>
                     <h1 className="font-druk text-center uppercase text-9xl lg:text-[150px]">Michelle Br<span className="uppercase text-center font-bebasneue text-[135px] lg:text-[159px]">ä</span>ndli</h1>
                 </div>
-                <p className="font-josefin text-3xl">Informatikerin</p>
+                <p className="font-josefin text-3xl">Front-End Entwickler</p>
             </div>
             <p className="text-5xl p-2 cursor-pointer animate-bounce"
                onClick={() => scrollToNextSection()}

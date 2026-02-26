@@ -1,4 +1,5 @@
 import Link from "next/link"
+import PhotoCollage from "@/app/components/PhotoCollage";
 
 export default function AboutMe() {
     return (
@@ -6,37 +7,27 @@ export default function AboutMe() {
             <h1 className="text-7xl uppercase font-druk sm:pt-12 sm:pb-12 pb-20 pt-20"><span
                 className="font-bebasneue uppercase text-[76px]">ü</span>ber mich</h1>
             <div className="flex items-center flex-col-reverse lg:flex-row gap-4 justify-center">
-                <div className="flex flex-col gap-7 lg:w-1/2 font-josefin w-full bg-secondary text-black border-primary border-2 p-10 rounded-xl">
+                <div
+                    className="flex flex-col gap-7 lg:w-1/2 font-josefin w-full bg-secondary text-black border-primary border-2 p-10 rounded-xl">
                     <p className="sm:text-lg text-md">
-                        Hallo! Ich bin Michelle Brändli, eine leidenschaftliche Informatikerin mit einem starken
-                        Interesse
-                        an Technologie und Innovation. Seit meiner Kindheit fasziniert mich die Welt der Computer und
-                        Softwareentwicklung. Ich habe einen Abschluss in Informatik von der Universität Zürich und
-                        verfüge über umfangreiche Erfahrung in verschiedenen Programmiersprachen und Technologien.
-
-                        In meiner Freizeit experimentiere ich gerne mit neuen Technologien, arbeite an
-                        Open-Source-Projekten
-                        und bilde mich ständig weiter, um auf dem neuesten Stand der Technik zu bleiben. Ich bin auch
-                        eine
-                        begeisterte Teilnehmerin an Hackathons und Tech-Meetups, wo ich mein Netzwerk erweitern und von
-                        anderen Fachleuten lernen kann.
-
-                        Meine Stärken liegen in der Problemlösung, Teamarbeit und kreativen Denkweise. Ich freue mich
-                        darauf,
-                        meine Fähigkeiten in spannenden Projekten einzusetzen und zur Entwicklung innovativer Lösungen
-                        beizutragen.
+                        Hallo, ich bin <span className="text-primary"> Michelle Brändli</span>, bin 18 Jahre alt und wohne in der Schweiz. Zurzeit bin ich eine
+                        Schülerin der 2.Klasse an der <span className="text-primary">IMS</span> in der <span className="text-primary">Kantonschule Hottingen</span>. In meiner Freizeit zeichne ich
+                        gerne, höre Musik und programmiere.
                     </p>
                     <Link href="https://github.com/Miche69"
-                          className="bg-primary p-4 w-fit flex gap-4 text-secondary rounded-xl"
+                          className="bg-primary shadow-[0_9px_0_rgb(0,0,0)] hover:shadow-[0_4px_0px_rgb(0,0,0)] ease-out hover:translate-y-1 transition-all p-4 w-fit flex gap-4 text-secondary rounded-xl"
                     >
                         <img src="./logo-github.svg" alt="Github Project" className="invert w-5 h-5"/>
                         GitHub Profile
                     </Link>
                 </div>
                 <div className="flex lg:w-1/2 w-full justify-center items-center">
-                    <img className="border-primary rounded-xl border-2" src="https://i.pinimg.com/1200x/7b/90/a4/7b90a430a733d857d2b1b89a1892acd9.jpg" alt="Sonic the Hedgehog"
-                    />
+                    <img src="./aboutMe.jpg" alt="image of myself and my drawings"/>
                 </div>
+            </div>
+            <div className="pt-10 pb-10">
+                <img src="./Skizze.jpg" alt="Placeholder für eine Animation"
+                    className="w-full aspect-video object-cover "/>
             </div>
         </div>
     )

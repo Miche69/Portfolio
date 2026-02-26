@@ -7,8 +7,13 @@
             "thumbnail": "./sbb-lore.png",
             "liveUrl": "https://sbb-lore.vercel.app/",
             "githubUrl": "https://github.com/IM23a-braendlim/SBB_Lore",
-            "description": "A project focused on developing innovative solutions.",
-            "status": "Fertig"
+            "description": "Eine Webseite über die SBB",
+            "status": "Fertig",
+            "tags": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ]
         },
         {
             "id": 2,
@@ -17,18 +22,29 @@
             "thumbnail": "./base-converter.png",
             "liveUrl": "https://base-converter-pearl.vercel.app/",
             "githubUrl": "https://github.com/Miche69/BaseConverter",
-            "description": "A project aimed at improving user experience.",
-            "status": "Im Entwicklung"
+            "description": "Eine Webseite, wo man zum Beispiel eine Dezimalzahl zu einer Binärzahl umwandelt.",
+            "status": "Im Entwicklung",
+            "tags": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ]
         },
         {
             "id": 3,
             "name": "AntiShorts",
             "icon": "./antishorts-icon.png",
-            "thumbnail": "./sbb-lore.png",
+            "thumbnail": "https://placehold.co/900x300",
             "liveUrl": "https://github.com/Miche69/AntiShorts",
             "githubUrl": "https://github.com/Miche69/AntiShorts",
-            "description": "A research project exploring new technologies.",
-            "status": "Im Entwicklung"
+            "description": "Eine Chrome Extension, die YouTube Shorts von der Suche, Homepage und Accounts ausblendet",
+            "status": "Im Entwicklung",
+            "tags": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Chrome"
+            ]
         },
         {
             "id": 4,
@@ -37,8 +53,13 @@
             "thumbnail": "./shopping-app.png",
             "liveUrl": "https://shopping-app-three-beige.vercel.app/",
             "githubUrl": "https://github.com/Miche69/ShoppingApp",
-            "description": "An e-commerce platform for modern shopping.",
-            "status": "Fertig"
+            "description": "Eine Shopping Webseite, die mit React erstellt wurde.",
+            "status": "Fertig",
+            "tags": [
+                "React",
+                "JavaScript",
+                "TailwindCSS"
+            ]
         }
     ]
 }
