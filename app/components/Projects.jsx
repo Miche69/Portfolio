@@ -19,7 +19,7 @@ export default function Projects() {
 
     useEffect(() => {
         fetchData();
-    })
+    }, [])
 
     return (
         <div id="projects"

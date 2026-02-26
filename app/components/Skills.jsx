@@ -22,7 +22,7 @@ export default function Skills() {
 
     useEffect(() => {
         fetchData();
-    })
+    }, [])
 
     return (
         <div id="skills"

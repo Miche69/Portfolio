@@ -15,7 +15,7 @@ export default function ProjectNavBarMobile(props) {
     }
     useEffect(() => {
         fetchData();
-    });
+    }, [])
 
     const totalProjects = data.projects ? data.projects.length : 0;
     const mobileTabs = document.getElementsByClassName("project-navbar-mobile");
