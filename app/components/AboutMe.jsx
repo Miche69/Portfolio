@@ -1,5 +1,4 @@
 import Link from "next/link"
-import PhotoCollage from "@/app/components/PhotoCollage";
 
 export default function AboutMe() {
     return (
