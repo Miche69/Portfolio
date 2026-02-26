@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function AboutMe() {
     return (
         <div id="aboutMe" className="bg-black sm:p-10 p-5 text-secondary">
-            <h1 className="text-7xl uppercase font-druk sm:pt-12 sm:pb-12 pb-20 pt-20"><span
+            <h1 className="text-7xl uppercase font-druk sm:pt-12 pb-12 pt-20"><span
                 className="font-bebasneue uppercase text-[76px]">ü</span>ber mich</h1>
             <div className="flex items-center flex-col-reverse lg:flex-row gap-4 justify-center ">
                 <div

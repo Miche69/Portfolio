@@ -24,7 +24,7 @@ export default function Projects() {
     return (
         <div id="projects"
              className="projects-section bg-primary sm:p-10 sm:pb-15 pb-15 p-5 text-secondary flex flex-col">
-            <h2 className="font-druk uppercase text-7xl sm:pb-12 sm:pt-12 pb-20 pt-20">Projekte</h2>
+            <h2 className="font-druk uppercase text-7xl pb-12 sm:pt-12 pt-20">Projekte</h2>
             <div className="bg-zinc-200 font-josefin rounded-xl flex flex-col text-black">
                 <div className="flex pr-5 gap-2 p-4">
                     <div className="bg-red-500 w-3 h-3 rounded-full"></div>
