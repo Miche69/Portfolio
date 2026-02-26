@@ -27,7 +27,7 @@ export default function AboutMe() {
             </div>
             <div className="pt-10 pb-10">
                 <img src="./Skizze.jpg" alt="Placeholder für eine Animation"
-                    className="w-full aspect-video object-cover "/>
+                    className="w-full aspect-video object-cover"/>
             </div>
         </div>
     )
